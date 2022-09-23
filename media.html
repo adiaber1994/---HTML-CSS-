@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/media.css">
+        <link rel="icon" href="./image/logos/general-cjQAi-2021.02.08.08.09.59-logo2021.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap" rel="stylesheet">
+        <title>Media</title>
+    </head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a class="logo" href="./open.html" >
+            <img class="logo-img" src="./image/logos/general-cjQAi-2021.02.08.08.09.59-logo2021.png" wids="100" height="100" alt="">
+       </a>
+
+    <div id="countdown" class="countdown">
+      <div class="time">
+        <h2 id="days"></h2>
+        <small>Days</small>
+      </div>
+      <div class="time">
+        <h2 id="hours"></h2>
+        <small>Hours</small>
+      </div>
+      <div class="time">
+        <h2 id="minutes"></h2>
+        <small>Minutes</small>
+      </div>
+      <div class="time">
+        <h2 id="second"></h2>
+        <small>Second</small>
+      </div>
+  </div>
+    <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/open.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/media.html">Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:5500/FQS.html">FQS</a></li>
+        <li class="nav-item"><a class="nav-link"  href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+    </ul>
+     <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </div>
+    </nav>
+</header>
+
+ <h1>Media</h1>
+
+ <div class="row">
+    <div class="column">
+      <img src="./image/edoardo-maresca-VsIcWolOLNo-unsplash.jpg" width="100%" height="auto" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./image/kamakshi-subramani-qAsrQN5SokA-unsplash.jpg" width="100%" height="auto" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./image/pexels-hitesh-choudhary-1144283.jpg" width="100%"  height="auto" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./image/ugur-arpaci-U18V0ToioFU-unsplash.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./image/thomas-park-den6EylZH9w-unsplash.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/sung-jin-cho-lWFRVZBdaDg-unsplash.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/sandeep-kr-yadav-wvuKkinzeCM-unsplash.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(7)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/pexels-polina-kovaleva-8404554.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(8)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/pexels-mikhail-nilov-9392076.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(9)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/pexels-mikhail-nilov-9391348.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(10)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/pexels-mikhail-nilov-9391414.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(11)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./image/hasmik-ghazaryan-olson-YPZeKiLiiUM-unsplash.jpg"  width="100%" height="auto" onclick="openModal();currentSlide(12)" class="hover-shadow">
+      </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+            <img src="./image/edoardo-maresca-VsIcWolOLNo-unsplash.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 12</div>
+          <img src="./image/kamakshi-subramani-qAsrQN5SokA-unsplash.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 12</div>
+          <img src="./image/pexels-hitesh-choudhary-1144283.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="./image/ugur-arpaci-U18V0ToioFU-unsplash.jpg"  style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 12</div>
+          <img src="./image/thomas-park-den6EylZH9w-unsplash.jpg"  style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 12</div>
+          <img src="./image/sung-jin-cho-lWFRVZBdaDg-unsplash.jpg"  style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 12</div>
+          <img src="./image/sandeep-kr-yadav-wvuKkinzeCM-unsplash.jpg"   style="width:100%">
+        </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 12</div>
+            <img src="./image/pexels-polina-kovaleva-8404554.jpg"  style="width:100%">
+          </div>
+        <div class="mySlides">
+          <div class="numbertext">9/ 12</div>
+          <img src="./image/pexels-mikhail-nilov-9392076.jpg"   style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 12</div>
+          <img src="./image/pexels-mikhail-nilov-9391348.jpg"  style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 12</div>
+          <img src="./image/pexels-mikhail-nilov-9391414.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">12 / 12</div>
+          <img src="./image/hasmik-ghazaryan-olson-YPZeKiLiiUM-unsplash.jpg"  style="width:100%">
+        </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+    </div>
+ </div>
+ <div id="youtube-v">
+  <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/C8mJ2C2cbd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="video2" width="560" height="315" src="https://www.youtube.com/embed/YKZBQ6P5aq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><footer>
+  <div class="in-footer">
+        <h4>Copyright © 1996-2022 MardiGrasNewOrleans.com</h4>
+        <div>
+            <ul class="nav-footer">
+                <li class="li-navbar"><a class="a-nav" href="http://127.0.0.1:5500/open.html">Home</a></li>
+                <li class="li-navbar"><a class="a-nav" href="http://127.0.0.1:5500/about.html">About</a></li>
+                <li class="li-navbar"><a class="a-nav" href="http://127.0.0.1:5500/media.html">Media</a></li>
+                <li class="li-navbar"><a class="a-nav" href="http://127.0.0.1:5500/FQS.html">FQS</a></li>
+                <li class="li-navbar"><a class="a-nav"  href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+            </ul>
+        </div>  
+        
+      <div class="Social">
+            <a href="https://www.facebook.com/MardiGrasNewOrleans" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/MardiGrasNOLA" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+      </div>
+          
+    </div>
+</footer>
+
+
+<script src="./js/media.js"></script>
+</body>
+</html>

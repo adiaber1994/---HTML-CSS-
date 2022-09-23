@@ -1,0 +1,300 @@
+body{
+    background-color:black
+
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+ 
+}
+
+header{
+ background-color: #9453a6; 
+}
+
+li{
+  list-style: none;
+}
+
+.nav-link{
+  color: #fdf8e5;
+  text-decoration:none;
+  font-family: 'Pattaya', sans-serif;
+  font-size: larger;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+}
+.countdown{
+  display: flex;
+  font-family: 'Pattaya', sans-serif;
+ padding-left: 190px;
+}
+
+.time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.time h2{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  text-align: center;
+}
+
+h1{
+  color: #fdf8e5;
+  text-align: center;
+  font-family: 'Pattaya', sans-serif;
+    
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+input[type=submit] {
+  background-color:#fdf8e5;
+  color:black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:  #8cbf3f;
+  padding: 20px;
+  width: 500px;
+ 
+}
+
+.col-75{
+  padding: 15px;
+  width: 100%;
+}
+
+.row-s{
+  justify-content: center;
+  width: 30px;
+}
+
+.btn-s{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 80px;
+  border-radius: 10%;
+  background-color: #fdf8e5;
+}
+  
+
+footer{
+
+  background-color: #9453a6;
+  position: relative;
+  z-index: 6;
+  display: flex;
+  margin: 50px 0px 0px 0px;
+}
+
+.in-footer{
+  color: #fdf8e5;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer{
+  text-align: center;
+
+}
+
+.li-navbar{
+  list-style: none;
+  display: inline;
+  padding-inline: 10px;
+    
+}
+.a-nav{
+  text-align: center;
+  text-decoration:none;
+  color: #fdf8e5;
+  font-family: 'Pattaya', sans-serif;
+  font-size: larger;
+}
+
+.fa {
+  border-radius: 50%;
+  font-size: 30px;
+  border: 3px solid white;
+  width: 40px;
+}
+
+.Social{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  display: inline;
+  
+}
+  
+.Social:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  text-decoration: none;
+
+   
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+ .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width:768px){
+  .hamburger{
+        display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+        transform: translatey(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+        transform: translatey(-8px) rotate(-45deg);
+  }
+
+  .nav-menu   {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap:0;
+    flex-direction: column;
+    background-color: #9453a6;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item{
+      margin: 16px 0;
+  }
+
+  .nav-menu.active{
+     left: 0;
+  }
+
+}
+@media (max-width:500px){
+  .countdown{
+      position: absolute;
+      padding: 140px;
+  }
+  .time{
+      margin: 5px;
+  
+  
+  }
+
+  .time h2 {
+      font-size: 12px;
+  }
+
+  .time small{
+      font-size: 10px;
+  }
+}
+
+  
+
+  
+
+
+
+
+
+

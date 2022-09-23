@@ -1,0 +1,271 @@
+body{
+    background-color: black;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+header{
+   background-color: #9453a6; 
+}
+
+li{
+    list-style: none;
+}
+
+.nav-link{
+    color: #fdf8e5;
+    text-decoration:none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: larger;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.countdown{
+    display: flex;
+    font-family: 'Pattaya', sans-serif;
+   padding-left: 190px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 5px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    text-align: center;
+}
+
+h1{text-align: center;
+    font-family: 'Henny Penny', cursive;
+    margin-top: 40px;
+    color: #fdf8e5;
+    margin-bottom: 30px;
+    
+ 
+}
+
+.accordion {
+    background-color:#fdf8e5;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family:'Pattaya', sans-serif;
+    font-size: larger;
+}
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+footer{
+   
+    background-color: #9453a6;
+    position: relative;
+    z-index: 6;
+    display: flex;
+    margin: 50px 0px 0px 0px;
+
+}
+
+.in-footer{
+    color: wheat;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+
+}
+.nav-footer{
+    text-align: center;
+
+}
+.li-navbar{
+    list-style: none;
+    display: inline;
+    padding-inline: 10px;
+    
+}
+.a-nav{
+    text-align: center;
+    text-decoration:none;
+    color: #fdf8e5;
+    font-family: 'Pattaya', sans-serif;
+    font-size: larger;
+}
+
+
+.Social{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    display: inline;
+    
+}
+  
+.Social:hover {
+  opacity: 0.7;
+}
+
+.fa{
+    border-radius: 50%;
+    width: 40px;
+    font-size: 30px;
+    border: 3px solid white;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+   
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translatey(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translatey(-8px) rotate(-45deg);
+    }
+
+    .nav-menu   {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap:0;
+        flex-direction: column;
+        background-color: #9453a6;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+     left: 0;
+    }
+
+} 
+
+@media (max-width:500px){
+    .countdown{
+        position: absolute;
+        padding: 140px;
+    }
+    .time{
+        margin: 5px;
+    
+    
+    }
+
+    .time h2 {
+        font-size: 12px;
+    }
+
+    .time small{
+        font-size: 10px;
+    }
+}
+
+
